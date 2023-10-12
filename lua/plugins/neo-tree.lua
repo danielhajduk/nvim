@@ -7,7 +7,7 @@ return {
     "MunifTanjim/nui.nvim",
   },
   keys = {
-    { "<C-e>", "<Cmd>Neotree toggle<CR>" },
+    { "<C-e>", "<Cmd>Neotree focus<CR>" },
   },
   opts = {
     filesystem = {
@@ -31,12 +31,6 @@ return {
       },
     },
     event_handlers = {
-      {
-        event = "file_opened",
-        handler = function()
-          require("neo-tree.command").execute({ action = "close" })
-        end,
-      },
       {
         event = "neo_tree_window_after_open",
         handler = function(args)
