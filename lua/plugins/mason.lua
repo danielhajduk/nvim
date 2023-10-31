@@ -14,6 +14,7 @@ return {
       "prisma-language-server",
       "tailwindcss-language-server",
       "graphql-language-service-cli",
+      "prettier"
     },
   },
 }
